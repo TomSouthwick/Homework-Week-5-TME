@@ -20,6 +20,8 @@
 // grey - past
 // green - future
 
+// Troll Mode
+
 ////////////////////////////////////////////////////////////////
 var trollMode = true;
 var dayEl = document.getElementById("currentDay");
@@ -83,8 +85,9 @@ calendar.forEach((calendarTask, index) => {
         randSave.style.position = "absolute";
         randSave.style.top = Math.random() * window.innerHeight + "px";
         randSave.style.left = Math.random() * window.innerHeight + "px";
-        dayEl.classList.add("rotating");
+        // dayEl.classList.add("rotating");
         randSave.classList.add("rotating");
+        randomMovement.classList.add("rotating");
       });
     }, 0);
   }
